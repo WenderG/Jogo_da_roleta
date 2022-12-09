@@ -1,6 +1,6 @@
 <h1>Jogo_da_roleta</h1>
 
->Status do projeto: Em desenvolvimento.
+>Status do projeto: Finalizado.
 
 Jogo desenvolvido como um projeto da faculdade.
 
