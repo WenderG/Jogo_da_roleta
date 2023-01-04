@@ -10,16 +10,6 @@ void regras(void){
     system("pause");
 }
 
-void pontuacao(int pontos)
-{
-    if(pontos < 0)
-        pontos = 0;
-    else
-        pontos += 50;
-
-    printf("Pontos: %d", pontos);
-}
-
 void menu(void)
 {
     srand(time(NULL));
@@ -30,7 +20,7 @@ void menu(void)
 
     do{
         system("cls");
-        if(tempo < 0){
+	if(tempo < 0){
             tempo = 0;
         }
         printf("----------JOGO DA ROLETA----------");
@@ -47,7 +37,7 @@ void menu(void)
                 printf("Que pena...\n");
                 printf("Quantidade de tentativas: %d", tentativas);
                 printf("\n\n");
-                pontuacao(pontos);
+                printf("Pontos: %d", pontos);
                 Sleep(2000);
                 system("cls");
                 printf("Ate a proxima!\n");
@@ -84,10 +74,10 @@ void menu(void)
 
                 if(numeroEscolhido == numeroSorteado){
                     pontos += 10;
-		            tempo -= 50;
+		    tempo -= 50;
                     printf("Parabens!\n");
                 }else {
-		            tempo = 1000;
+		    tempo = 1000;
                     pontos = pontos / 2;
                     printf("Tente de novo!\n");     
                 }
