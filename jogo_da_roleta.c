@@ -33,7 +33,7 @@ void menu(void)
         if(tempo < 0){
             tempo = 0;
         }
-        printf("----------JOGO DA ADIVINHACAO----------");
+        printf("----------JOGO DA ROLETA----------");
         printf("\n\n\n");
         printf("Pontuacao atual: %d", pontos);
         printf("\n\n");
